@@ -1,0 +1,1 @@
+function z = Div_Large(x,y)    sx = size(x)(2);  sy = size(y)(2);  sz = max(sx,sy)+1;  x = [zeros(1,sz-sx) x];  y = [zeros(1,sz-sy) y];  z = x/y  endfunction

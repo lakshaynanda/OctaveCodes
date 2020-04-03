@@ -1,0 +1,1 @@
+function z = add_large(x,y)    sx = size(x)(2);  sy = size(y)(2);  m = zeros(sx, sx+sy-1);    for i = (1:sx)    for j = (1:sy)      m (i,i+j-1) = x(i)*y(j);     endfor   endfor   z = [0 (ones(1,sx)*m)];  sz = size(z)(2);    for i = (sz:-1:2)      z(i-1) = z(i-1) + floor(z(i)/10);      z(i) = mod(z(i),10);          endif   endfor endfunction

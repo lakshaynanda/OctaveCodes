@@ -1,0 +1,1 @@
+function f = fibr2(n)  if (n==0)    f=0;  elseif (n==1)    f=1;  else     t = zeros(n+1,1);    t(1) = 0;    t(2) = 1;    for i = (3:n+1)      t(i)= t(i-1)+t(i-2);    endfor     f = t(n+1);  endif   endfunction
